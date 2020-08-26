@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html struktur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Titel</h1>
+    </header>
+
+    <main>
+        <h2>undertitle</h2>
+
+
+        <section>
+
+            <article>
+                <img src=" https://placeimg.com/400/300/any" alt="billede">
+
+                <h3>Overskrift på billede1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae aut ad deleniti, suscipit deserunt esse provident vitae ut molestiae quae corporis nihil officia repellat repudiandae dolorum eos animi fugiat quibusdam sed ex voluptatibus.</p>
+            </article>
+
+            <article>
+                <img src=" https://placeimg.com/400/300/any" alt="billede" id="img_2">
+                <h3 id="h3_2">Overskrift på billede2</h3>
+                <p id="p_2">p_2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae aut ad deleniti, suscipit deserunt esse provident vitae ut molestiae quae corporis nihil officia repellat repudiandae dolorum eos animi fugiat quibusdam sed ex voluptatibus.</p>
+            </article>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <p>This is at footer</p>
+        <p>made by siw mehlin</p>
+
+    </footer>
+
+
+    <script>
+        const overskrift = document.querySelector("h1");
+        overskrift.textContent = "udskift tekstindhold i elementer";
+        //overskrift.innerHTML = "<h1>noget tredje og nyt</h1>";
+        console.log(overskrift.textContent);
+
+        const underoverskrift = document.querySelector("h2");
+        underoverskrift.textContent;
+        console.log(underoverskrift.textContent);
+
+        const article = document.querySelector("article:first-child");
+        article.textContent;
+        console.log(article.textContent);
+
+        const billede1 = document.querySelector("img");
+        billede1.textContent;
+        console.log(billede1.textContent);
+
+        const h3_1 = document.querySelector("h3");
+        h3_1.textContent = "udskitet overskrift til billede 1";
+        console.log(h3_1.textContent);
+
+        const p_1 = document.querySelector("p");
+        p_1.textContent = "Udskiftet brødtekst til billede 1";
+        console.log(p_1.textContent);
+
+        const article2 = document.querySelector("article:nth-child(2)")
+        article2.textContent;
+        console.log(article2.textContent);
+
+        const billede2 = document.querySelector("#img_2");
+        billede2.textContent;
+        console.log(billede2.textContent);
+
+        const h3_2 = document.querySelector("#h3_2");
+        h3_2.textContent = "udskitet overskrift til billede 2";
+        console.log(h3_2.textContent);
+
+        const p_2 = document.querySelector("#p_2");
+        p_2.textContent = "udskiftet brødtekst til billede 2";
+        console.log(p_2.textContent);
+
+        const footer = document.querySelector("footer");
+        footer.textContent;
+        console.log(footer.textContent);
+
+    </script>
+</body>
+
+</html>
