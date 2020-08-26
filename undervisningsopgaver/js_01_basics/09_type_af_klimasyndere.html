@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09_type_af_klimasyndere</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script>
+        let timer = 5;
+        let co2IKg = 107;
+        let co2UdledningIKgVedFlyrejse = timer * co2IKg;
+        let resultat;
+
+        if (co2UdledningIKgVedFlyrejse < 100) {
+            resultat = (`ved ${timer} timers flyrejse har du udledt ${co2UdledningIKgVedFlyrejse} Kg CO2. Tæt på Thunberg`)
+        } else if (co2UdledningIKgVedFlyrejse < 200) {
+            resultat = (`ved ${timer} timers flyrejse har du udledt ${co2UdledningIKgVedFlyrejse} Kg CO2. ja ja, det behøver ikke at melde dig ud af`)
+        } else if (co2UdledningIKgVedFlyrejse < 600) {
+            resultat = `ved ${timer} timers flyrejse har du udledt ${co2UdledningIKgVedFlyrejse} Kg CO2. Det er godt for turismen i Nordeuropa.`
+        } else {
+            resultat = `ved ${timer} timers flyrejse har du udledt ${co2UdledningIKgVedFlyrejse} Kg CO2. Når ja, vi kan jo altid kolonisere en anden planet`
+        }
+
+        console.log(resultat);
+
+    </script>
+</body>
+
+
+
+</html>
